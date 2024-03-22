@@ -4,10 +4,8 @@ import TodoForm from './TodoForm';
 // import { TiEdit } from 'react-icons/ti';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { faPenToSquare, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
@@ -39,8 +37,6 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
             {/* <TiEdit onClick={() => setEdit({ id: todo.id, value: todo.text})} className='edit-icon'/> */}
 
             <FontAwesomeIcon icon={faPenToSquare} onClick={() => setEdit({ id: todo.id, value: todo.text})} className='edit-icon'/>
-            {/* <FontAwesomeIcon icon="fa-sharp fa-solid fa-xmark"  onClick={() => removeTodo(todo.id)} className='delete-icon' /> */}
-            {/* <faPenToSquare icon="fa-solid fa-pen-to-square" onClick={() => setEdit({ id: todo.id, value: todo.text})} className='edit-icon' /> */}
             <FontAwesomeIcon icon={faTimes} onClick={() => removeTodo(todo.id)} />
             
         </div>

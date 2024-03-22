@@ -121,6 +121,35 @@ h2 {
     color: #fff;
 }
 
+@media only screen and (max-width: 667px) {
+    h2 {
+        font-size: 19px;
+        margin-right: 10rem;
+    }
+    .todo-form {
+        margin-bottom: 32px;
+    }
+    form{
+        width: 70%;
+        margin: 1rem;
+        padding: 5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .todo-app {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 480px;
+        min-height: 600px;
+        background: #161a2b;
+        text-align: center;
+        margin: 120px auto;
+        border-radius: 10px;
+        padding-bottom: 32px;
+    }
+  }
+
 
 
 

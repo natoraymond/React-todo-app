@@ -10,7 +10,6 @@ function App() {
   return (
 
     <div className='todo-app'>
-      {/* <TodoForm /> */}
       <TodoList />
     </div>
   );
